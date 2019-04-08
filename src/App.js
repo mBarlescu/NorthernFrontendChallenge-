@@ -15,7 +15,7 @@ class App extends Component {
     } else {
       console.log('fail');
       document.getElementById('error').hidden = false;
-      document.getElementById('email').border = 'red';
+      document.getElementById('email').style.border = '1px solid #D02035';
     }  
   }
   render() {
@@ -24,7 +24,8 @@ class App extends Component {
         <header>
           INTENRSHIP SIGNUP FORM
           
-          <hr />
+          <div id='redLine'>
+          </div>
         </header>
 
         <div>

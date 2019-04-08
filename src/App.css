@@ -14,13 +14,11 @@ header {
 input {
   font-family: 'Merriweather';
   font-size: 16px;
-  border: none;
 }
 
 select {
   font-family: 'Merriweather';
   font-size: 16px;
-  border: none;
 }
 
 button {
@@ -86,3 +84,11 @@ form{
   height: 25px;
 }
 
+#redLine{
+  background-color: #D02035;
+}
+
+.borderError{
+  border-width: thin;
+  border: red;
+}
