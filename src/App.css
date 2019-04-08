@@ -9,6 +9,7 @@ header {
   font-family: 'Montserrat', sans-serif;
   font-size: 65px;
   font-weight: 700;
+  margin-bottom: 20px;
 }
 
 input {
@@ -29,6 +30,7 @@ button {
   display: block;
   width: 100%;
   border: none;
+  height: 41px;
 }
 
 body {
@@ -59,6 +61,7 @@ form{
 
 #email{
   width: 49%;
+  height: 35px;
 }
 
 #interests{
@@ -77,18 +80,33 @@ form{
 #hidden{
   font-family: 'Merriweather';
   font-size: 12px;
-  margin-bottom: 5px;
+  margin-bottom: 10px;
   width: 49%;
   display: flex;
   justify-content: flex-end;
-  height: 25px;
+  height: 15px;
 }
 
 #redLine{
+  width: 26%;
   background-color: #D02035;
+  height: 100%;
+  padding: 8px;
+  margin-top: 20px;
+  margin-bottom: 20px;
 }
 
 .borderError{
   border-width: thin;
   border: red;
+}
+
+.thanks{
+  font-family: 'Montserrat';
+  font-weight: 700;
+  font-size: 35px;
+}
+
+#prepare{
+  margin-bottom: 0
 }
