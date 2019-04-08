@@ -11,6 +11,7 @@ class App extends Component {
     if (re.test(email)){
       console.log('success');
       document.getElementById('hidden').hidden = true;
+      document.getElementById('button').innerHTML = 'Submitting...';
     } else {
       console.log('fail');
       document.getElementById('hidden').hidden = false;
@@ -34,12 +35,12 @@ class App extends Component {
                 <input type='text' id='email' ref='email' placeholder='Your Email Address' />
                 <select name='interests' id='interests'>
               
-                  <option value="" disabled selected hidden>Your Interests</option>
+                  <option id='disabledOption' value="" selected disabled hidden>Your Interests</option>
                   <option value='Development'>Development</option>
                 </select>
               </div>
               <div class='button'>
-                <button>Sign Up Now</button>
+                <button id='button'>Sign Up Now</button>
               </div>
             </div>
           </form>
