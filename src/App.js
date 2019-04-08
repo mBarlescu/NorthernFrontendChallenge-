@@ -10,12 +10,13 @@ class App extends Component {
     const re = /\S+@\S+\.\S+/;
     if (re.test(email)){
       console.log('success');
-      document.getElementById('hidden').hidden = true;
+      document.getElementById('error').hidden = true;
       document.getElementById('button').innerHTML = 'Submitting...';
     } else {
       console.log('fail');
-      document.getElementById('hidden').hidden = false;
-    }
+      document.getElementById('error').hidden = false;
+      document.getElementById('email').border = 'red';
+    }  
   }
   render() {
     return (
@@ -28,9 +29,11 @@ class App extends Component {
 
         <div>
           <p>Prepare for your career with a Project Management, Web-Development, Graphic design, or Digital Marketing Internship at Northern.</p>
-          <p id='hidden' hidden>Please enter a valid email address.</p>
           <form onSubmit={this.submit}>
             <div class='innerForm'>
+              <div id='hidden'>
+                <p id='error' hidden>Please enter a valid email address.</p>
+              </div>
               <div class='inputs'>
                 <input type='text' id='email' ref='email' placeholder='Your Email Address' />
                 <select name='interests' id='interests'>

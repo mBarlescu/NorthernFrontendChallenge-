@@ -65,6 +65,7 @@ form{
 
 #interests{
   width: 49%;
+  background-color: white;
 }
 
 .inputs{
@@ -76,10 +77,12 @@ form{
 }
 
 #hidden{
-  margin-left: 32%;
   font-family: 'Merriweather';
   font-size: 12px;
   margin-bottom: 5px;
+  width: 49%;
+  display: flex;
+  justify-content: flex-end;
+  height: 25px;
 }
-
 
